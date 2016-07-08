@@ -1,0 +1,31 @@
+[general]
+league : race
+result : all
+tmp-dir : ./run
+
+[log]
+file : ./run/log/corewar.log
+level : 30
+web-level : 40
+backup-number : 3
+max-size : 20
+
+[web]
+host : 0.0.0.0
+port : 8080
+threads : 125
+daemonize : yes
+pid-file : ./run/corewar.pid
+session-path: ./run/session/
+
+[mysql]
+username : corewar
+password : corewar
+host : localhost
+port : 3306
+database : corewar_dev
+
+[mail]
+host : localhost
+port : 25
+from : xavier@marcelet.com

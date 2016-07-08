@@ -1,0 +1,10 @@
+CREATE   USER '${mysql:username}'@'${mysql:host}' IDENTIFIED BY '${mysql:password}';
+GRANT    USAGE ON * . * TO '${mysql:username}'@'${mysql:host}' IDENTIFIED BY '${mysql:password}' WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0 ;
+GRANT    SELECT ON `mysql`.* TO '${mysql:username}'@'${mysql:host}' IDENTIFIED BY '${mysql:password}';
+GRANT    SELECT ON `${mysql:database}`.* TO '${mysql:username}'@'${mysql:host}' IDENTIFIED BY '${mysql:password}';
+GRANT    UPDATE ON `${mysql:database}`.* TO '${mysql:username}'@'${mysql:host}' IDENTIFIED BY '${mysql:password}';
+GRANT    DELETE ON `${mysql:database}`.* TO '${mysql:username}'@'${mysql:host}' IDENTIFIED BY '${mysql:password}';
+GRANT    INSERT ON `${mysql:database}`.* TO '${mysql:username}'@'${mysql:host}' IDENTIFIED BY '${mysql:password}';
+GRANT    CREATE ON `${mysql:database}`.* TO '${mysql:username}'@'${mysql:host}' IDENTIFIED BY '${mysql:password}';
+GRANT    DROP   ON `${mysql:database}`.* TO '${mysql:username}'@'${mysql:host}' IDENTIFIED BY '${mysql:password}';
+GRANT    LOCK TABLES ON `${mysql:database}`.* TO '${mysql:username}'@'${mysql:host}' IDENTIFIED BY '${mysql:password}';

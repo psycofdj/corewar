@@ -1,0 +1,4 @@
+*.pyo
+corewar.cfg
+setup/.module.corewar
+run/

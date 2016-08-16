@@ -1,3 +1,16 @@
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [Introduction](#introduction)
+- [How to play](#how-to-play)
+- [Install](#install)
+- [Configuration](#configuration)
+- [Run](#run)
+    - [Standalone](#standalone)
+    - [WebServer](#webserver)
+
+<!-- markdown-toc end -->
+
 Introduction
 ============
 
